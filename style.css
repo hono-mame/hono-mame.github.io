@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* common */
+body{
+    margin:0;
+}
+
+img{
+    vertical-align: bottom ;
+}
+
+h1,h2,h3,p{
+    margin: 0;
+}
+
+.wrapper{
+    max-width: 600;
+    margin: 0 auto;
+    padding: 30px 4%;
+}
+
+
+
+/* header */
+header{
+    text-align: center;
+}
+
+.photo{
+    width:240px;
+    height:240px;
+    border-radius:50%;
+     margin-bottom: 10px;
+}
+
+/* main */
+h2{
+    text-align: center;
+}
+
+.myskills{
+    background-color: #F1F1F1;
+}
+.myskills ul {
+    margin-top: 30px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill_1{
+    background-color: #e44d26;
+}
+
+.skill_2{
+    background-color: #1572b6;
+}
+
+.skill_3{
+    background-color: #ebbc00;
+}
+
+.myskills ul li {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 14px;;
+    font-weight: bold;
+}
+
+.works_box{
+    max-width: 450px;
+    margin: 40px auto;
+}
+
+.works_image{
+    width: 100%;
+    height: auto;
+}
+
+.works_box h3 {
+    margin-top: 10px;
+}
+
+.works_box p {
+    margin-top: 7px;
+}
+
+/* footer */
+footer {
+    background-color: #000000;
+    color:#ffffff;
+    text-align: center;
+}
