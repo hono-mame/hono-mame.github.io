@@ -1,81 +1,84 @@
 @charset "UTF-8";
 
-/* common */
-body{
-    margin:0;
-}
-
-img{
-    vertical-align: bottom ;
-}
-
-h1,h2,h3,p{
+/* 共通設定 */
+body {
     margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
 }
 
-.wrapper{
-    max-width: 600;
+h1, h2, h3, p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.wrapper {
+    max-width: 900px;
     margin: 0 auto;
     padding: 30px 4%;
 }
 
-
-
-/* header */
-header{
+/* ヘッダー */
+header {
     text-align: center;
+    padding: 40px 0;
 }
 
-.photo{
-    width:240px;
-    height:240px;
-    border-radius:50%;
-     margin-bottom: 10px;
+.photo {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* main */
-h2{
-    text-align: center;
+/* スキル */
+.myskills {
+    background-color: #e9ecef;
+    padding: 40px 0;
 }
 
-.myskills{
-    background-color: #F1F1F1;
-}
-.myskills ul {
-    margin-top: 30px;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+    justify-items: center;
 }
 
-.skill_1{
-    background-color: #e44d26;
-}
-
-.skill_2{
-    background-color: #1572b6;
-}
-
-.skill_3{
-    background-color: #ebbc00;
-}
-
-.myskills ul li {
-    width: 90px;
-    height: 90px;
+.skill-box {
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: #FFFFFF;
-    font-size: 14px;;
+    justify-content: center;
+    color: white;
     font-weight: bold;
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.works_box{
-    max-width: 450px;
-    margin: 40px auto;
+.skill-box:hover {
+    transform: scale(1.1);
+}
+
+/* スキルの色 */
+.skill_1 { background-color: #e44d26; }
+.skill_2 { background-color: #f39c12; }
+.skill_3 { background-color: #3498db; }
+.skill_4 { background-color: #2ecc71; }
+.skill_5 { background-color: #9b59b6; }
+
+/* ワークボックス */
+.works_box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
 }
 
 .works_image{
@@ -84,16 +87,40 @@ h2{
 }
 
 .works_box h3 {
-    margin-top: 10px;
+    color: #007bff;
 }
 
-.works_box p {
-    margin-top: 7px;
-}
-
-/* footer */
+/* フッター */
 footer {
-    background-color: #000000;
-    color:#ffffff;
+    background-color: #343a40;
+    color: white;
     text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* SNSボタンのリスト */
+.sns-btn {
+    display: flex;
+    justify-content: center;  /* 中央揃え */
+    margin-top: 20px;
+    padding: 0;
+}
+
+/* リストアイテムのスタイル */
+.sns-btn li {
+    list-style: none;  /* リストマーカーを消す */
+    margin: 0 10px;  /* 左右の余白 */
+}
+
+/* アイコン画像 */
+.sns-btn img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+/* ホバー時のエフェクト */
+.sns-btn img:hover {
+    transform: scale(1.2);  /* 少し拡大 */
 }
