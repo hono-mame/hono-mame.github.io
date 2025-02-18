@@ -110,7 +110,7 @@ footer {
 /* リストアイテムのスタイル */
 .sns-btn li {
     list-style: none;  /* リストマーカーを消す */
-    margin: 0 10px;  /* 左右の余白 */
+    margin: 0 10px;  /* 左右の余白  */
 }
 
 /* アイコン画像 */
