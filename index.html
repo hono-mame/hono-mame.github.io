@@ -4,52 +4,98 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Honoka Kobayashi's Portfolio Site</title>
+    <title>Honoka Kobayashi's Portfolio</title>
     <meta name="description" content="Honoka Kobayashi's Portfolio Site">
     <link rel="icon" href="honoka.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class = "wrapper">
-        <img class = "photo" src="honoka.jpg" alt="写真アイコン">
+    <header class="wrapper">
+        <img class="photo" src="honoka.jpg" alt="写真アイコン">
         <h1>小林 ほのか / Honoka Kobayashi</h1>
-        <p>お茶の水女子大学 理学部情報科学科3年 / 戸次研究室</p>
-        <p>Bachelor's student in Computer Science, Ochanomizu University /  Bekki Lab.</p>
+        <p>お茶の水女子大学 理学部情報科学科3年 | 戸次研究室</p>
+        <p>Bachelor's student in Computer Science, Ochanomizu University | Bekki Lab.</p>
+        <p>email: g2220520@is.ocha.ac.jp</p>
+        <ul class="sns-btn">
+            <li><a href="https://github.com/hono-mame" target="_blank"><img src="github.jpg" alt="Github"></a></li>
+            <li><a href="https://www.linkedin.com/in/honoka-kobayashi-4530b6298/" target="_blank"><img src="linkedin.jpg" alt="Linkedin"></a></li>
+        </ul>
     </header>
+
     <main>
-        <section class = "myskills">
-            <div class = "wrapper">
-                <h2> My Skills</h2>
-                <ul>
-                    <li class = "skill_1">スキル1</li>
-                    <li class = "skill_2" >スキル2</li>
-                    <li class = "skill_3">スキル3</li>
-                </ul>
+        <section class="myskills">
+            <div class="wrapper">
+                <h2>My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-box skill_1">C++</div>
+                    <div class="skill-box skill_2">Python</div>
+                    <div class="skill-box skill_3">Java</div>
+                    <div class="skill-box skill_4">R</div>
+                    <div class="skill-box skill_5">Ocaml</div>
+                </div>
             </div>
         </section>
+
+        <section class="wrapper">
+            <h2>Education</h2>
+            <div class="works_box">
+                <h3>お茶の水女子大学理学部情報科学科 (2022年4月 - )</h3>
+                <p>2023年4月 学部生成績優秀者奨学金を受賞</p>
+            </div>
+        </section>
+
+        <section class="wrapper">
+            <h2>Work Experience & Internship</h2>
+            <div class="works_box">
+                <h3>Google STEP Internship (2023年8月-10月)</h3>
+                <p>8週間のフルタイムインターンシップに参加。Google Maps チームに配属され、歩行者のナビゲーション精度向上のための新しいメトリックを開発。</p>
+                <p>20分間の成果発表最終プレゼンテーションを英語で行った。</p>
+                <p>使用言語: C++, SQL</p>
+            </div>
+            <div class="works_box">
+                <h3>株式会社Rhelixa (2023年2月- 現在)</h3>
+                <p>業務委託として遺伝子のメチル化解析等のパイプライン構築を経験。</p>
+                <p>使用言語: Python, R</p>
+            </div>
+        </section>
+
         <section class = "wrapper">
-            <h2>Works (実績)</h2>
+            <h2>Qualifications </h2>
             <div class = "works_box">
-            <img class = "works_image" src="honoka.jpg" alt="写真アイコン">
-            <h3>あああ</h3>
-            <p>テキストテキストテキストテキストテキスト</p>
+            <h3>TOEIC  score: 910 (2024年4月)
+            </h3>
+            <p>Reading:415 , Listening:495 </p>
         </div>
         <div class = "works_box">
-            <img class = "works_image" src="honoka.jpg" alt="写真アイコン">
-            <h3>あああ</h3>
-            <p>テキストテキストテキストテキストテキスト</p>
+            <h3>IELTS overall: 6.5 (2021年3月)
+            </h3>
+            <p>Reading:6.5 , Listening:6.5 , Writing: 6.5 , Speaking: 6.0 </p>
         </div>
         <div class = "works_box">
-            <img class = "works_image" src="honoka.jpg" alt="写真アイコン">
-            <h3>あああ</h3>
-            <p>テキストテキストテキストテキストテキスト</p>
+            <h3>マルチメディア検定 エキスパート 合格 (2023年秋)</h3>
+        </div>
+        <div class = "works_box">
+            <h3>CGエンジニア検定 エキスパート 合格 (2023年秋)</h3>
         </div>
         </section>
+
+        <section class="wrapper">
+            <h2>作品</h2>
+            <div class="works_box">
+                <h3>クロスステッチ刺繍図案の自動作成</h3>
+                <p>画像からクロスステッチ刺繍の図面を生成するプログラムを作成。</p>
+                <p>使用言語: Java</p>
+                <p>ここに説明書のリンク</p>
+                <p>ここにコードのリンク</p>
+                <img class = "works_image" src="works.jpg" alt="写真アイコン">
+            </div>
+        </section>
     </main>
+
     <footer>
-        <div class = "wrapper">
-            <p><small>&copy; Honoka Kobayashi</small></p>
+        <div class="wrapper">
+            <p><small>&copy; 2024 Honoka Kobayashi</small></p>
         </div>
-    </footer>
+    </footer>    
 </body>
 </html>
