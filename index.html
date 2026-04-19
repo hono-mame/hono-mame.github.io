@@ -1,106 +1,191 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Honoka Kobayashi's Portfolio</title>
-    <meta name="description" content="Honoka Kobayashi's Portfolio Site">
+    <title>Honoka Kobayashi | Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="wrapper">
-        <img class="photo" src="images/honoka.jpg" alt="写真アイコン">
-        <h1>小林 ほのか / Honoka Kobayashi</h1>
-        <p>お茶の水女子大学 理学部情報科学科4年 | 戸次研究室</p>
-        <p>Bachelor's student in Computer Science, Ochanomizu University | Bekki Lab.</p>
-        <p>email: hononyanpo@gmail.com</p>
-        <ul class="sns-btn">
-            <li><a href="https://github.com/hono-mame" target="_blank"><img src="images/github.jpg" alt="Github"></a></li>
-            <li><a href="https://www.linkedin.com/in/honoka-kobayashi-4530b6298/" target="_blank"><img src="images/linkedin.jpg" alt="Linkedin"></a></li>
-        </ul>
-    </header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#home">
+                    <img class="photo-nav" src="images/honoka.jpg" alt="Honoka">
+                    <span>Honoka Kobayashi</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#experience">Experience</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <main>
-        <section class="myskills">
-            <div class="wrapper">
-                <h2>My Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-box skill_1">C++</div>
-                    <div class="skill-box skill_2">Python</div>
-                    <div class="skill-box skill_3">Java</div>
-                    <div class="skill-box skill_4">R</div>
-                    <div class="skill-box skill_5">Ocaml</div>
-                    <div class="skill-box skill_6">Haskell</div>
+    <main class="main-content">
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-image">
+                    <img class="photo-large" src="images/honoka.jpg" alt="Honoka Kobayashi">
+                </div>
+                <div class="hero-text">
+                    <h1>Honoka Kobayashi</h1>
+                    <p class="hero-title">1st-year Master's Student | Software Engineer</p>
+                    <p class="hero-affiliation">1st-year M.S. student at the Graduate School of Humanities and Sciences, Ochanomizu University (Bekki Lab).</p>
+                    <p class="hero-email">Email: honoka.kobayashi [at] is.ocha.ac.jp</p>
+                    
+                    <ul class="sns-btn-home">
+                        <li><a href="https://github.com/hono-mame" target="_blank"><img src="images/github.jpg" alt="GitHub"></a></li>
+                        <li><a href="https://www.linkedin.com/in/honoka-kobayashi-4530b6298/" target="_blank"><img src="images/linkedin.jpg" alt="LinkedIn"></a></li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section class="wrapper">
-            <h2>Education</h2>
-            <div class="works_box">
-                <h3>お茶の水女子大学理学部情報科学科 (2022年4月〜 )</h3>
-                <p>2024年4月 学部生成績優秀者奨学金を受賞</p>
+        <section id="skills" class="page-section">
+            <h2 class="section-title">Skills</h2>
+            <div class="vertical-list">
+                <div class="info-card">
+                    <h3><span class="icon">💻</span> Programming Languages</h3>
+                    <div class="tag-group">
+                        <span class="tag">C++</span><span class="tag">Python</span><span class="tag">R</span><span class="tag">Haskell</span><span class="tag">Java</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <h3><span class="icon">🛠️</span> Tools & Frameworks</h3>
+                    <div class="tag-group">
+                        <span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Docker</span>
+                        <span class="tag">Singularity</span><span class="tag">HaskTorch</span><span class="tag">LaTeX</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <h3><span class="icon">🔍</span> Research Interests</h3>
+                    <div class="tag-group">
+                        <span class="tag">Natural Language Processing</span>
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Computational Linguistics</span>
+                        <span class="tag">Bioinformatics</span>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="wrapper">
-            <h2>Work Experience & Internship</h2>
-            <div class="works_box">
-                <h3>Google STEP Internship (2023年8月-10月)</h3>
-                <p>8週間のフルタイムインターンシップに参加。Google Maps チームに配属され、歩行者のナビゲーション精度向上のための新しいメトリックを開発。</p>
-                <p>20分間の成果発表最終プレゼンテーションを英語で行った。</p>
-                <p>使用言語: C++, SQL</p>
+        <section id="awards" class="page-section">
+            <h2 class="section-title">Awards & Certificates</h2>
+            <h3 class="subsection-header">Academic Awards & Scholarships</h3>
+            <div class="vertical-list">
+                <div class="award-card-wide">
+                    <span class="badge-date">2025</span>
+                    <h4>University Student Award</h4>
+                    <p>Awarded for outstanding academic achievement at Ochanomizu University.</p>
+                </div>
+                <div class="award-card-wide">
+                    <span class="badge-date">2024</span>
+                    <h4>Ochanomizu University Undergraduate Scholarship</h4>
+                    <p>Merit-based scholarship at Ochanomizu University for top-performing students based on academic excellence.</p>
+                </div>
+                <div class="award-card-wide">
+                    <span class="badge-date">Scholarship</span>
+                    <h4>Toru Yoshikawa Foundation Scholarship</h4>
+                    <p>Selected as a recipient of a highly competitive merit-based scholarship from a foundation dedicated to cultivating the next generation of IT leaders and innovators in Japan.</p>
+                </div>
             </div>
-            <div class="works_box">
-                <h3>株式会社Rhelixa (2023年2月- 現在)</h3>
-                <p>業務委託として遺伝子のメチル化解析等のパイプライン構築を経験。</p>
-                <p>使用言語: Python, R</p>
+
+            <h3 class="subsection-header" style="margin-top: 40px;">Certifications</h3>
+            <div class="vertical-list">
+                <div class="award-card-wide">
+                    <span class="badge-date">Language</span>
+                    <h4>English Proficiency</h4>
+                    <p>EIKEN Grade 1 (2025) / TOEIC 910 (2024)</p>
+                </div>
+                <div class="award-card-wide">
+                    <span class="badge-date">Technical</span>
+                    <h4>CG-ARTS Certifications</h4>
+                    <p>CG Engineer Expert (2024) / Multimedia Expert (2023)</p>
+                </div>
             </div>
         </section>
 
-        <section class = "wrapper">
-            <h2>Qualifications </h2>
-            <div class = "works_box">
-            <h3>TOEIC  score: 910 (2024年4月)
-            </h3>
-            <p>Reading: 415, Listening: 495 </p>
-        </div>
-        <div class = "works_box">
-            <h3>IELTS overall: 6.5 (2021年3月)
-            </h3>
-            <p>Reading:6.5, Listening:6.5, Writing: 6.5, Speaking: 6.0 </p>
-        </div>
-        <div class = "works_box">
-            <h3>マルチメディア検定 エキスパート 合格 (2023年秋)</h3>
-        </div>
-        <div class = "works_box">
-            <h3>CGエンジニア検定 エキスパート 合格 (2024年夏)</h3>
-        </div>
-        </section>
-
-        <section class="wrapper">
-            <h2>My Works</h2>
-            <div class="works_box">
-                <h3>クロスステッチ刺繍図案の自動作成</h3>
-                <p>大学3年後期 コンピュータビジョンの授業の自由課題の作品。</p>
-                <p>画像からクロスステッチ刺繍の図面を生成するプログラムを作成。</p>
-                <p>使用言語: Java</p>
-                <p>
-                    <a href="https://github.com/hono-mame/Cross-stitch-drafting" target="_blank">
-                        コードはこちら
-                    </a>
-                </p>
-                <img class="works_image" src="images/works.jpg" alt="写真アイコン">
+        <section id="education" class="page-section">
+            <h2 class="section-title">Education</h2>
+            <div class="vertical-list">
+                <div class="award-card-wide">
+                    <span class="badge-date">2026 - Present</span>
+                    <h4>M.S. in Information Sciences</h4>
+                    <p><strong>Graduate School of Humanities and Sciences, Ochanomizu University, Japan</strong></p>
+                </div>
+                <div class="award-card-wide">
+                    <span class="badge-date">2022 - 2026</span>
+                    <h4>B.S. in Information Sciences</h4>
+                    <p><strong>School of Science, Ochanomizu University, Japan</strong></p>
+                    <p>GPA 3.47 (Ranked in top 5%). Received several awards and scholarships for academic excellence.</p>
+                </div>
+                <div class="award-card-wide">
+                    <span class="badge-date">2019 - 2022</span>
+                    <h4>High School Diploma</h4>
+                    <p><strong>Chiba Prefectural Higashi Katsushika High School</strong></p>
+                    <p>Graduated with an outstanding academic record (GPA 4.6/5.0). Achieved perfect marks (5/5) in all advanced Mathematics and Information Science courses.</p>
+                </div>
             </div>
         </section>
-        
+
+        <section id="publications" class="page-section">
+            <h2 class="section-title">Publications</h2>
+            <div class="vertical-list">
+                <div class="info-card">
+                    <h3>Neural DTS: 自然言語推論パイプラインへの双曲分類器の組み込み</h3>
+                    <p class="publication-meta">H. Kobayashi et al., NLP2026, March 2026.</p>
+                    <a href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q6-11.pdf" target="_blank" class="btn-action">Paper (PDF)</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="page-section">
+            <h2 class="section-title">Experience</h2>
+            <div class="vertical-list">
+                <div class="info-card">
+                    <span class="badge-date">08/2023 - 10/2023</span>
+                    <h3>Google LLC | STEP Intern</h3>
+                    <p class="location-text">Tokyo, Japan</p>
+                    <ul class="list-style">
+                        <li>Member of the Google Maps team using C++ and SQL.</li>
+                        <li> Delivered a comprehensive 20-minute final technical presentation and engaged in a Q&A session entirely in English, collaborating with engineers across international offices.</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <span class="badge-date">02/2023 - Present</span>
+                    <h3>Rhelixa Inc | Software Engineer (Part-time)</h3>
+                    <p class="location-text">Tokyo, Japan</p>
+                    <ul class="list-style">
+                        <li>Developing genomic analysis pipelines using Python and R.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <div class="wrapper">
-            <p><small>&copy; 2025 Honoka Kobayashi</small></p>
-        </div>
-    </footer>    
+    <footer class="footer">
+        <p>&copy; 2026 Honoka Kobayashi.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
