@@ -5,203 +5,324 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Honoka Kobayashi | Portfolio</title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-brand">
-                <a href="#home">
-                    <img class="photo-nav" src="images/honoka.jpg" alt="Honoka">
-                    <span>Honoka Kobayashi</span>
-                </a>
+            <a class="nav-brand" href="#home">
+                <img class="photo-nav" src="images/honoka.jpg" alt="Honoka">
+                <span>Honoka&nbsp;Kobayashi</span>
+            </a>
+            <div class="nav-right">
+                <button class="lang-toggle" id="langToggle" aria-label="Switch language">日本語</button>
+                <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
             <ul class="nav-links">
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#awards">Awards</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#awards" data-i18n="nav.awards">Awards</a></li>
+                <li><a href="#education" data-i18n="nav.education">Education</a></li>
+                <li><a href="#publications" data-i18n="nav.publications">Publications</a></li>
+                <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="#teaching" data-i18n="nav.teaching">Teaching</a></li>
             </ul>
         </div>
     </nav>
 
     <main class="main-content">
         <section id="home" class="hero-section">
+            <div class="hero-blob hero-blob-1"></div>
+            <div class="hero-blob hero-blob-2"></div>
             <div class="hero-container">
-                <div class="hero-image">
-                    <img class="photo-large" src="images/honoka.jpg" alt="Honoka Kobayashi">
-                </div>
                 <div class="hero-text">
-                    <h1>Honoka Kobayashi</h1>
-                    <p class="hero-title">1st-year Master's Student | Software Engineer</p>
-                    <p class="hero-affiliation">1st-year M.S. student at the Graduate School of Humanities and Sciences, Ochanomizu University (Bekki Lab).</p>
-                    <p class="hero-email">Email: honoka.kobayashi [at] is.ocha.ac.jp</p>
-                    
-                    <ul class="sns-btn-home">
-                        <li><a href="https://github.com/hono-mame" target="_blank"><img src="images/github.jpg" alt="GitHub"></a></li>
-                        <li><a href="https://www.linkedin.com/in/honoka-kobayashi-4530b6298/" target="_blank"><img src="images/linkedin.jpg" alt="LinkedIn"></a></li>
-                    </ul>
+                    <h1>Honoka<br><span class="accent">Kobayashi</span></h1>
+                    <p class="hero-title" data-i18n="hero.title">1st-year Master's Student&ensp;/&ensp;Software Engineer</p>
+                    <p class="hero-affiliation" data-i18n="hero.affiliation">Graduate School of Humanities and Sciences,<br>Ochanomizu University (Bekki Lab)</p>
+                    <p class="hero-bio" data-i18n="hero.bio">I research Neural DTS, integrating hyperbolic lexical relation learning with logic-based natural language inference. I use Python for model training and Haskell to integrate an oracle into the inference system. My engineering experience includes C++ development at Google Search and Google Maps, and ongoing genomic analysis development at Rhelixa Inc.</p>
+                    <p class="hero-email">kobayashi.honoka [at] is.ocha.ac.jp</p>
+                    <div class="hero-actions">
+                        <a class="sns-btn" href="https://github.com/hono-mame" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14 0 1.54-.02 2.79-.02 3.17 0 .31.21.68.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a class="sns-btn" href="https://www.linkedin.com/in/honoka-kobayashi-4530b6298/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.55V9h3.57v11.45ZM22.23 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.23 0Z"/></svg>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="photo-frame">
+                        <img class="photo-large" src="images/honoka.jpg" alt="Honoka Kobayashi">
+                    </div>
                 </div>
             </div>
+            <a class="scroll-hint" href="#skills" aria-label="Scroll down">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </a>
         </section>
 
-        <section id="skills" class="page-section">
-            <h2 class="section-title">Skills</h2>
-            <div class="vertical-list">
+        <section id="skills" class="page-section reveal">
+            <p class="section-eyebrow">01</p>
+            <h2 class="section-title" data-i18n="skills.title">Skills</h2>
+            <div class="skills-grid">
                 <div class="info-card">
-                    <h3><span class="icon">💻</span> Programming Languages</h3>
+                    <h3 data-i18n="skills.languages">Programming Languages</h3>
                     <div class="tag-group">
-                        <span class="tag">Python</span><span class="tag">C++</span><span class="tag">Haskell</span><span class="tag">R</span><span class="tag">Java</span>
+                        <span class="tag">Python</span><span class="tag">C++</span><span class="tag">Haskell</span><span class="tag">C</span><span class="tag">R</span><span class="tag">SQL</span><span class="tag">Java</span><span class="tag">OCaml</span>
                     </div>
                 </div>
                 <div class="info-card">
-                    <h3><span class="icon">🛠️</span> Tools & Frameworks</h3>
+                    <h3 data-i18n="skills.tools">Tools &amp; Frameworks</h3>
                     <div class="tag-group">
                         <span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Docker</span>
                         <span class="tag">Singularity</span><span class="tag">HaskTorch</span><span class="tag">LaTeX</span>
                     </div>
                 </div>
-                <div class="info-card">
-                    <h3><span class="icon">🔍</span> Research Interests</h3>
+                <div class="info-card skills-wide">
+                    <h3 data-i18n="skills.interests">Research Interests</h3>
                     <div class="tag-group">
-                        <span class="tag">Natural Language Processing</span>
-                        <span class="tag">Machine Learning</span>
-                        <span class="tag">Computational Linguistics</span>
-                        <span class="tag">Bioinformatics</span>
+                        <span class="tag tag-accent" data-i18n="skills.interests.nlp">Natural Language Processing</span>
+                        <span class="tag tag-accent" data-i18n="skills.interests.ml">Machine Learning</span>
+                        <span class="tag tag-accent" data-i18n="skills.interests.cl">Computational Linguistics</span>
+                        <span class="tag tag-accent" data-i18n="skills.interests.bio">Bioinformatics</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="awards" class="page-section">
-            <h2 class="section-title">Awards & Certificates</h2>
-            <h3 class="subsection-header">Academic Awards & Scholarships</h3>
-            <div class="vertical-list">
+        <section id="awards" class="page-section reveal">
+            <p class="section-eyebrow">02</p>
+            <h2 class="section-title" data-i18n="awards.title">Awards &amp; Certificates</h2>
+
+            <h3 class="subsection-header" data-i18n="awards.academic">Academic Awards &amp; Scholarships</h3>
+            <div class="card-grid">
+                <div class="award-card-wide">
+                    <span class="badge-date" data-i18n="awards.shoshisha.date">2026 — Present</span>
+                    <h4 data-i18n="awards.shoshisha.name">Shoshisha Foundation Scholarship</h4>
+                    <p data-i18n="awards.shoshisha.desc">Selected as a scholarship recipient of the Shoshisha Foundation, a prestigious merit-based scholarship supporting outstanding students in Japan.</p>
+                </div>
                 <div class="award-card-wide">
                     <span class="badge-date">2025</span>
-                    <h4>University Student Award</h4>
-                    <p>Awarded for outstanding academic achievement at Ochanomizu University.</p>
+                    <h4 data-i18n="awards.student.name">University Student Award</h4>
+                    <p data-i18n="awards.student.desc">Awarded for outstanding academic achievement at Ochanomizu University.</p>
                 </div>
                 <div class="award-card-wide">
                     <span class="badge-date">2024</span>
-                    <h4>Ochanomizu University Undergraduate Scholarship</h4>
-                    <p>Merit-based scholarship at Ochanomizu University for top-performing students based on academic excellence.</p>
+                    <h4 data-i18n="awards.ocha.name">Ochanomizu University Undergraduate Scholarship</h4>
+                    <p data-i18n="awards.ocha.desc">Merit-based scholarship at Ochanomizu University for top-performing students based on academic excellence.</p>
                 </div>
                 <div class="award-card-wide">
-                    <span class="badge-date">Scholarship</span>
-                    <h4>Toru Yoshikawa Foundation Scholarship</h4>
-                    <p>Selected as a recipient of a highly competitive merit-based scholarship from a foundation dedicated to cultivating the next generation of IT leaders and innovators in Japan.</p>
+                    <span class="badge-date" data-i18n="badge.scholarship">Scholarship</span>
+                    <h4 data-i18n="awards.yoshikawa.name">Toru Yoshikawa Foundation Scholarship</h4>
+                    <p data-i18n="awards.yoshikawa.desc">Selected as a recipient of a merit-based scholarship from a foundation dedicated to cultivating the next generation of IT leaders and innovators in Japan.</p>
                 </div>
             </div>
 
-            <h3 class="subsection-header" style="margin-top: 40px;">Certifications</h3>
-            <div class="vertical-list">
+            <h3 class="subsection-header subsection-spaced" data-i18n="awards.certifications">Certifications</h3>
+            <div class="card-grid">
                 <div class="award-card-wide">
-                    <span class="badge-date">Language</span>
-                    <h4>English Proficiency</h4>
-                    <p>EIKEN Grade 1 (2025) / TOEIC 910 (2024)</p>
+                    <span class="badge-date" data-i18n="badge.language">Language</span>
+                    <h4 data-i18n="awards.english.name">English Proficiency</h4>
+                    <p data-i18n="awards.english.desc">EIKEN Grade 1 (2025)&ensp;/&ensp;TOEIC 910 (2024)</p>
                 </div>
                 <div class="award-card-wide">
-                    <span class="badge-date">Technical</span>
-                    <h4>CG-ARTS Certifications</h4>
-                    <p>CG Engineer Expert (2024) / Multimedia Expert (2023)</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="education" class="page-section">
-            <h2 class="section-title">Education</h2>
-            <div class="vertical-list">
-                <div class="award-card-wide">
-                    <span class="badge-date">04/2026 - Present</span>
-                    <h4>M.S. in Information Sciences</h4>
-                    <p><strong>Graduate School of Humanities and Sciences, Ochanomizu University, Japan</strong></p>
-                    <p>Expected graduation: March 2028.</p>
-                </div>
-                <div class="award-card-wide">
-                    <span class="badge-date">04/2022 - 03/2026</span>
-                    <h4>B.S. in Information Sciences</h4>
-                    <p><strong>School of Science, Ochanomizu University, Japan</strong></p>
-                    <p>GPA 3.45/4.0. Received several awards and scholarships for academic excellence.</p>
-                </div>
-                <div class="award-card-wide">
-                    <span class="badge-date">2019 - 2022</span>
-                    <h4>High School Diploma</h4>
-                    <p><strong>Chiba Prefectural Higashi Katsushika High School</strong></p>
-                    <p>Graduated with an outstanding academic record (GPA 4.6/5.0). Achieved perfect marks (5/5) in all advanced Mathematics and Information Science courses.</p>
+                    <span class="badge-date" data-i18n="badge.technical">Technical</span>
+                    <h4 data-i18n="awards.cgarts.name">CG-ARTS Certifications</h4>
+                    <p data-i18n="awards.cgarts.desc">CG Engineer Expert (2024)&ensp;/&ensp;Multimedia Expert (2023)</p>
                 </div>
             </div>
         </section>
 
-        <section id="publications" class="page-section">
-            <h2 class="section-title">Publications</h2>
+        <section id="education" class="page-section reveal">
+            <p class="section-eyebrow">03</p>
+            <h2 class="section-title" data-i18n="education.title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="badge-date" data-i18n="education.ms.date">04/2026 — Present</span>
+                    <h4 data-i18n="education.ms.name">M.S. in Information Sciences</h4>
+                    <p class="timeline-place" data-i18n="education.ms.place">Graduate School of Humanities and Sciences, Ochanomizu University, Japan</p>
+                    <p data-i18n="education.ms.desc">Expected graduation: March 2028.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="badge-date" data-i18n="education.bs.date">04/2022 — 03/2026</span>
+                    <h4 data-i18n="education.bs.name">B.S. in Information Sciences</h4>
+                    <p class="timeline-place" data-i18n="education.bs.place">School of Science, Ochanomizu University, Japan</p>
+                    <p data-i18n="education.bs.desc">GPA 3.45/4.0. Received several awards and scholarships for academic excellence.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="badge-date">2019 — 2022</span>
+                    <h4 data-i18n="education.hs.name">High School Diploma</h4>
+                    <p class="timeline-place" data-i18n="education.hs.place">Chiba Prefectural Higashi Katsushika High School</p>
+                    <p data-i18n="education.hs.desc">Graduated with an outstanding academic record (GPA 4.6/5.0). Achieved perfect marks (5/5) in all advanced Mathematics and Information Science courses.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="page-section reveal">
+            <p class="section-eyebrow">04</p>
+            <h2 class="section-title" data-i18n="publications.title">Publications</h2>
+
+            <h3 class="subsection-header" data-i18n="publications.international">International</h3>
             <div class="vertical-list">
-                <div class="info-card">
+                <div class="info-card publication-card">
+                    <div class="pub-tags">
+                        <span class="pub-tag" data-i18n="pubtag.international">International</span>
+                        <span class="pub-tag" data-i18n="pubtag.workshop">Workshop</span>
+                    </div>
                     <h3>Neural DTS: Integrating Hyperbolic Classifiers into Natural Language Inference Systems</h3>
-                    <p class="publication-meta">Honoka Kobayashi, Hinari Daido, and Daisuke Bekki. Proceedings of the 6th Workshop on Natural Language Meets Logic and Machine Learning (NALOMA), pp. 9–18, August 2026.</p>
-                    <p>Neural DTS combines hyperbolic lexical relation learning with logic-based natural language inference. I trained models in Python and integrated an oracle into the Haskell inference system.</p>
-                    <a href="https://aclanthology.org/2026.naloma-1.2/" target="_blank" rel="noopener" class="btn-action">Paper</a>
+                    <p class="publication-meta" data-i18n="publications.naloma.meta">Honoka Kobayashi, Hinari Daido, and Daisuke Bekki. Proceedings of the 6th Workshop on Natural Language Meets Logic and Machine Learning (NALOMA), pp. 9–18, August 2026.</p>
+                    <p data-i18n="publications.naloma.desc">Neural DTS combines hyperbolic lexical relation learning with logic-based natural language inference. I trained models in Python and integrated an oracle into the Haskell inference system.</p>
+                    <div class="pub-actions">
+                        <a href="https://aclanthology.org/2026.naloma-1.2/" target="_blank" rel="noopener" class="btn-action">
+                            <span data-i18n="btn.paper">Paper</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="info-card">
-                    <h3>Neural DTS: 自然言語推論パイプラインへの双曲分類器の組み込み</h3>
-                    <p class="publication-meta">H. Kobayashi et al., NLP2026, March 2026.</p>
-                    <a href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q6-11.pdf" target="_blank" class="btn-action">Paper (PDF)</a>
+                <div class="info-card publication-card">
+                    <div class="pub-tags">
+                        <span class="pub-tag" data-i18n="pubtag.international">International</span>
+                        <span class="pub-tag" data-i18n="pubtag.workshop">Workshop</span>
+                    </div>
+                    <h3>Neural DTS: Integrating Hyperbolic Classifiers into Natural Language Inference Systems</h3>
+                    <p class="publication-meta" data-i18n="publications.brigap.meta">H. Kobayashi, H. Daido and D. Bekki, BriGap Workshop 2026 (non-archival), 2026.</p>
+                    <div class="pub-actions">
+                        <a href="https://brigap-workshop.github.io/2026/papers" target="_blank" rel="noopener" class="btn-action">
+                            <span data-i18n="btn.abstract">Abstract</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="subsection-header subsection-spaced" data-i18n="publications.domestic">Domestic</h3>
+            <div class="vertical-list">
+                <div class="info-card publication-card">
+                    <div class="pub-tags">
+                        <span class="pub-tag" data-i18n="pubtag.domestic">Domestic</span>
+                    </div>
+                    <h3>Neural DTS: 自然言語推論システムへの双曲分類器の組み込み</h3>
+                    <p class="publication-meta" data-i18n="publications.dom.meta">H. Kobayashi et al., The 32nd Annual Meeting of the Association for Natural Language Processing (NLP2026), Poster Presentation, March 2026.</p>
+                    <div class="pub-actions">
+                        <a href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/Q6-11.pdf" target="_blank" rel="noopener" class="btn-action">
+                            <span data-i18n="btn.paper">Paper</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="experience" class="page-section">
-            <h2 class="section-title">Experience</h2>
+        <section id="experience" class="page-section reveal">
+            <p class="section-eyebrow">05</p>
+            <h2 class="section-title" data-i18n="experience.title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="badge-date" data-i18n="experience.swe.date">08/24/2026 — Present</span>
+                    <h4 data-i18n="experience.swe.name">Google — Software Engineering Intern (Search)</h4>
+                    <p class="timeline-place" data-i18n="place.tokyo">Tokyo, Japan</p>
+                    <ul class="list-style">
+                        <li data-i18n="experience.swe.li1">Developing software in C++ on the Google Search team.</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <span class="badge-date">08/2023 — 10/2023</span>
+                    <h4 data-i18n="experience.step.name">Google LLC — STEP Intern</h4>
+                    <p class="timeline-place" data-i18n="place.tokyo">Tokyo, Japan</p>
+                    <ul class="list-style">
+                        <li data-i18n="experience.step.li1">Developed tools to analyze destination accuracy on the Google Maps team using C++ and SQL.</li>
+                        <li data-i18n="experience.step.li2">Delivered a 20-minute final technical presentation and Q&amp;A session entirely in English.</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <span class="badge-date" data-i18n="experience.rhelixa.date">02/2023 — Present</span>
+                    <h4 data-i18n="experience.rhelixa.name">Rhelixa Inc — Software Engineer</h4>
+                    <p class="timeline-place" data-i18n="place.tokyo">Tokyo, Japan</p>
+                    <ul class="list-style">
+                        <li data-i18n="experience.rhelixa.li1">Developing automated genomic analysis pipelines using Python and R.</li>
+                        <li data-i18n="experience.rhelixa.li2">Adding new features to a specialized tool for DNA methylation analysis.</li>
+                        <li data-i18n="experience.rhelixa.li3">Collaborating with a team of researchers and engineers to optimize data processing workflows.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="teaching" class="page-section reveal">
+            <p class="section-eyebrow">06</p>
+            <h2 class="section-title" data-i18n="teaching.title">Teaching</h2>
             <div class="vertical-list">
                 <div class="info-card">
-                    <span class="badge-date">08/24/2026 - Present</span>
-                    <h3>Google | Software Engineering Intern (Search)</h3>
-                    <p class="location-text">Tokyo, Japan</p>
-                    <ul class="list-style">
-                        <li>Developing software in C++ on the Google Search team.</li>
-                    </ul>
-                </div>
-                <div class="info-card">
-                    <span class="badge-date">08/2023 - 10/2023</span>
-                    <h3>Google LLC | STEP Intern</h3>
-                    <p class="location-text">Tokyo, Japan</p>
-                    <ul class="list-style">
-                        <li>Developed tools to analyze destination accuracy on the Google Maps team using C++ and SQL.</li>
-                        <li> Delivered a comprehensive 20-minute final technical presentation and engaged in a Q&A session entirely in English, collaborating with engineers across international offices.</li>
-                    </ul>
-                </div>
-                <div class="info-card">
-                    <span class="badge-date">02/2023 - Present</span>
-                    <h3>Rhelixa Inc | Software Engineer</h3>
-                    <p class="location-text">Tokyo, Japan</p>
-                    <ul class="list-style">
-                        <li>Developing genomic analysis pipelines using Python and R.</li>
-                        <li>Developing features for DNA methylation analysis.</li>
-                    </ul>
+                    <!-- TODO: 担当年度・学期を確認して差し替え -->
+                    <span class="badge-date">2026</span>
+                    <h3 data-i18n="teaching.ta.name">Teaching Assistant — Fundamentals of Mathematics</h3>
+                    <p class="publication-meta" data-i18n="teaching.ta.place">Ochanomizu University</p>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2026 Honoka Kobayashi.</p>
+        <p>&copy; 2026 Honoka Kobayashi</p>
     </footer>
 
+    <script src="js/i18n.js"></script>
     <script>
+        // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (!target) return;
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                target.scrollIntoView({ behavior: 'smooth' });
+                navLinks.classList.remove('open');
+                navToggle.setAttribute('aria-expanded', 'false');
             });
         });
+
+        // Mobile menu
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        navToggle.addEventListener('click', () => {
+            const open = navLinks.classList.toggle('open');
+            navToggle.setAttribute('aria-expanded', open);
+        });
+
+        // Reveal sections on scroll
+        const revealObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        // Highlight the nav link of the section in view
+        const sectionObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    document.querySelectorAll('.nav-links a').forEach(a =>
+                        a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id));
+                }
+            });
+        }, { rootMargin: '-40% 0px -55% 0px' });
+        document.querySelectorAll('section[id]').forEach(s => sectionObserver.observe(s));
+
+        // Shadow on the navbar once scrolled
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 10);
+        }, { passive: true });
     </script>
 </body>
 </html>
